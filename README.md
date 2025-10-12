@@ -15,3 +15,21 @@ mkdir 01-activity
 cd 01-activity
 dotnet new aspire-starter --name starter-app-aspire
 ```
+
+Output:
+```shell
+The template ".NET Aspire Starter App" was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/dotnet/aspire/8.0-third-party-notices for details.
+
+Processing post-creation actions...
+Restoring [...]\01-activity\starter-app-aspire.sln:
+Restore succeeded.
+Restoring [...]\01-activity\starter-app-aspire.AppHost\starter-app-aspire.AppHost.csproj:
+Restore succeeded.
+Restoring [...]\01-activity\starter-app-aspire.ServiceDefaults\starter-app-aspire.ServiceDefaults.csproj:
+Restore succeeded.
+Restoring [...]\01-activity\starter-app-aspire.ApiService\starter-app-aspire.ApiService.csproj:
+Restore succeeded.
+Restoring [...]\01-activity\starter-app-aspire.Web\starter-app-aspire.Web.csproj:
+Restore succeeded.
+```
