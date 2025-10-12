@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/01-activity/">
+    <Project Path="01-activity/starter-app-aspire.AppHost/starter-app-aspire.AppHost.csproj" />
+    <Project Path="01-activity/starter-app-aspire.ServiceDefaults/starter-app-aspire.ServiceDefaults.csproj" />
+    <Project Path="01-activity/starter-app-aspire.Web/starter-app-aspire.Web.csproj" />
+  </Folder>
+</Solution>
