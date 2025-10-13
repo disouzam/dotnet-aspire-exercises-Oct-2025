@@ -1,8 +1,10 @@
 ﻿using System.Text.Json;
 using System.Web;
+
+using Api.Data;
+
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.Extensions.Caching.Memory;
-using Api.Data;
 
 namespace Api
 {
