@@ -52,3 +52,20 @@ Processing post-creation actions...
 Restoring [...]\02-activity\ServiceDefaults\ServiceDefaults.csproj:
 Restore succeeded.
 ```
+
+Added `ServiceDefaults` project to the solution using Visual Studio GUI and added references in each project - `Api` and `MyWeatherHub` - via CLI commands as shown below:
+
+```shell
+cd 02-activity
+cd Api
+dotnet add reference ../ServiceDefaults/
+cd ..
+cd MyWeatherHub
+dotnet add reference ../ServiceDefaults/
+```
+
+Output:
+```shell
+Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
+Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
+```
