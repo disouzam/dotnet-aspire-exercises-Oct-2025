@@ -33,3 +33,39 @@ Restore succeeded.
 Restoring [...]\01-activity\starter-app-aspire.Web\starter-app-aspire.Web.csproj:
 Restore succeeded.
 ```
+
+# Smart Defaults for your system - Part 3
+
+Link to the video: [Smart Defaults for your system [Pt 3] | .NET Aspire for Beginners](https://youtu.be/bjiNpz15lf0?si=Y6M5AB2R-_BfRCha)
+
+```shell
+cd 02-activity
+dotnet new aspire-servicedefaults --name ServiceDefaults
+```
+
+Output:
+```shell
+The template ".NET Aspire Service Defaults" was created successfully.
+This template contains technologies from parties other than Microsoft, see https://aka.ms/dotnet/aspire/8.0-third-party-notices for details.
+
+Processing post-creation actions...
+Restoring [...]\02-activity\ServiceDefaults\ServiceDefaults.csproj:
+Restore succeeded.
+```
+
+Added `ServiceDefaults` project to the solution using Visual Studio GUI and added references in each project - `Api` and `MyWeatherHub` - via CLI commands as shown below:
+
+```shell
+cd 02-activity
+cd Api
+dotnet add reference ../ServiceDefaults/
+cd ..
+cd MyWeatherHub
+dotnet add reference ../ServiceDefaults/
+```
+
+Output:
+```shell
+Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
+Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
+```
