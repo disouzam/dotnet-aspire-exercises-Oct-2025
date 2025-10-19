@@ -102,3 +102,11 @@ dotnet solution add Api/Api.csproj
 dotnet solution add MyWeatherHub/MyWeatherHub.csproj
 dotnet solution add ServiceDefaults/ServiceDefaults.csproj 
 ```
+
+AppHost and ServiceDefaults projects were updated to .NET 9
+
+```bash
+cd AppHost
+dotnet add reference ../Api/Api.csproj
+dotnet add reference ../MyWeatherHub/ #Only path added, command auto-discovers the project inside
+```
