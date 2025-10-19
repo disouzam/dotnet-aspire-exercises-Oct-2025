@@ -74,8 +74,14 @@ Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
 
 Link to the video: [Orchestration and the Dashboard [Pt 4] | .NET Aspire for Beginners](https://youtu.be/kgd3xK8Nz38?si=yAKLcu7pBrMdHOCi)
 
+Creation of initial project
 ```shell
 mkdir 03-activity
 cd 03-activity
 dotnet new aspire-apphost -n AppHost
+```
+
+Creation of a new solution
+```shell
+dotnet new sln --name Orchestration-Dashboard
 ```
