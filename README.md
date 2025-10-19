@@ -116,3 +116,10 @@ dotnet add reference ../MyWeatherHub/ #Only path added, command auto-discovers t
 
 Link to the video: [Simplifying communications with Service Discovery [Pt 5] | .NET Aspire for Beginners](https://youtu.be/l0ebdWo_Llw?si=82U9uTZT_iGMyQny)
 
+```bash
+mkdir 04-activity
+cd 03-activity
+cp -r -v . ../04-activity
+cd ../04-activity
+mv Orchestration-Dashboard.sln Service-Discovery.sln
+```
