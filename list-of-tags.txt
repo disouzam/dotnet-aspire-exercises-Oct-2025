@@ -3,6 +3,7 @@ Tags and its commit SHAs:
 2dda5b18fbc803fc7d26d541281a6edfcf1fe266 refs/tags/added-service-defaults-to-existing-projects^{}
 39d64719b012b960c3f8272fa3d96bc201407992 refs/tags/apphost-and-orchestration-of-existing-projects^{}
 f0b289ef2e4cf9e85bd297fbfe3735b939e1b475 refs/tags/first-working-dotnet-aspire-solution^{}
+ad32feafd741258a7755965459ddac7dffc47f03 refs/tags/service-discovery^{}
 
 
 Tag messages:
@@ -16,3 +17,4 @@ first-working-dotnet-aspire-solution .NET Aspire Starter app created after follo
     
     Video 1: [What is .NET Aspire? [Pt 1] | .NET Aspire for Beginners](https://youtu.be/VHzYEtd1MDM?si=uoMh7bFlQ-JUnswS)
     Video 2: [Developer Workstation Setup [Pt 2] | .NET Aspire for Beginners](https://youtu.be/cA6Z8ayPXaE?si=QvBZ8MCKU7ISLQ5O)
+service-discovery Exercises about Service Discovery and naming convention for services in local environment
