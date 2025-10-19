@@ -169,3 +169,8 @@ Solution is built correctly without any compiling errors but once one tries to o
 
 **Figure 5:** Traces of the original request and retries
 ![Traces of the original request and retries](./04-activity/4-traces-showing-failed-requests-to-api-and-the-retries.png)
+
+The commit mentioned above has been reverted (so that its effects are now null) and Figure 6 now shows a successful service discovery operation through structured logs:
+
+**Figure 6:** A successful service discovery operation
+![A successful service discovery operation](./04-activity/5-structured-logs-showing-a-successful-service-discovery-operation.png)
