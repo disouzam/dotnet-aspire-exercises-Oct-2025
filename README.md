@@ -69,3 +69,13 @@ Output:
 Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
 Reference `..\ServiceDefaults\ServiceDefaults.csproj` added to the project.
 ```
+
+# Orchestration and the Dashboard - Part 4
+
+Link to the video: [Orchestration and the Dashboard [Pt 4] | .NET Aspire for Beginners](https://youtu.be/kgd3xK8Nz38?si=yAKLcu7pBrMdHOCi)
+
+```shell
+mkdir 03-activity
+cd 03-activity
+dotnet new aspire-apphost -n AppHost
+```
