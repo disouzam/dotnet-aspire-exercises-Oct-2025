@@ -85,3 +85,8 @@ Creation of a new solution
 ```shell
 dotnet new sln --name Orchestration-Dashboard
 ```
+
+Added initial project to the solution
+```shell
+dotnet solution add AppHost/AppHost.csproj
+```
