@@ -186,3 +186,9 @@ cp -r -v . ../05-activity
 cd ../05-activity
 mv Service-Discovery.sln Aspire-Integrations.sln
 ```
+
+Add package that enable Aspire integration to Redis:
+```bash
+cd AppHost
+dotnet add package Aspire.Hosting.Redis
+```
