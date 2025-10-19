@@ -1,4 +1,7 @@
-﻿namespace Api.Data;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Api.Data;
 
 public class ForecastResponse
 {
