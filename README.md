@@ -110,3 +110,67 @@ cd AppHost
 dotnet add reference ../Api/Api.csproj
 dotnet add reference ../MyWeatherHub/ #Only path added, command auto-discovers the project inside
 ```
+
+
+# Service Discovery - Part 5
+
+Link to the video: [Simplifying communications with Service Discovery [Pt 5] | .NET Aspire for Beginners](https://youtu.be/l0ebdWo_Llw?si=82U9uTZT_iGMyQny)
+
+```bash
+mkdir 04-activity
+cd 03-activity
+cp -r -v . ../04-activity
+cd ../04-activity
+mv Orchestration-Dashboard.sln Service-Discovery.sln
+```
+
+After basic service discovery was presented, one error was simulated to show what happens when naming conversions are violated and prevent service discovery to happens normally.
+
+Error was introduced in commit shown below:
+
+```diff
+commit 1a249c3
+Author: Dickson Souza <36424026+disouzam@users.noreply.github.com>
+Date:   Sun Oct 19 19:02:05 2025 -0300
+
+    Changed string name of API from `api` to `weatherApi` to break service discovery and see what happens
+---
+ 04-activity/AppHost/Program.cs | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/04-activity/AppHost/Program.cs b/04-activity/AppHost/Program.cs
+index 994e650..2170722 100644
+--- a/04-activity/AppHost/Program.cs
++++ b/04-activity/AppHost/Program.cs
+@@ -1,6 +1,6 @@
+ var builder = DistributedApplication.CreateBuilder(args);
+ 
+-var myApi = builder.AddProject<Projects.Api>("api");
++var myApi = builder.AddProject<Projects.Api>("weatherApi");
+ 
+ var web = builder.AddProject<Projects.MyWeatherHub>("myweatherhub")
+               .WithReference(myApi)
+
+```
+
+Solution is built correctly without any compiling errors but once one tries to open MyWeatherHub web application error appears.
+
+**Figure 1:** Application started normally
+![Application started normally](./04-activity/0-applications-running-normally-before-any-interaction.png)
+
+**Figure 2:** Exception raised because service discovery failed due to the error intentionally introduced
+![Exception raised because service discovery failed due to the error intentionally introduced](./04-activity/1-exception-raised-because-service-discovery-failed.png)
+
+**Figure 3:** Exception details
+![Exception details](./04-activity/2-details-of-exception.png)
+
+**Figure 4:** Failed retries by auto-configured Polly (via Service Defaults)
+![Failed retries by auto-configured Polly (via Service Defaults)](./04-activity/3-failed-retries-by-polly.png)
+
+**Figure 5:** Traces of the original request and retries
+![Traces of the original request and retries](./04-activity/4-traces-showing-failed-requests-to-api-and-the-retries.png)
+
+The commit mentioned above has been reverted (so that its effects are now null) and Figure 6 now shows a successful service discovery operation through structured logs:
+
+**Figure 6:** A successful service discovery operation
+![A successful service discovery operation](./04-activity/5-structured-logs-showing-a-successful-service-discovery-operation.png)
