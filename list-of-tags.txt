@@ -1,6 +1,7 @@
 Tags and its commit SHAs:
 
 2dda5b18fbc803fc7d26d541281a6edfcf1fe266 refs/tags/added-service-defaults-to-existing-projects^{}
+39d64719b012b960c3f8272fa3d96bc201407992 refs/tags/apphost-and-orchestration-of-existing-projects^{}
 f0b289ef2e4cf9e85bd297fbfe3735b939e1b475 refs/tags/first-working-dotnet-aspire-solution^{}
 
 
@@ -9,6 +10,8 @@ Tag messages:
 added-service-defaults-to-existing-projects Added `ServiceDefaults` to two existing projects showing that .NET Aspire can retrolift existing / legacy projects
     
     Based on video 3: [Smart Defaults for your system [Pt 3] | .NET Aspire for Beginners](https://youtu.be/bjiNpz15lf0?si=Y6M5AB2R-_BfRCha)
+apphost-and-orchestration-of-existing-projects Created an App Host Aspire project and added existing projects to it, providing orchestration and built-in dashboard
+        - Based on video 4 - [Orchestration and the Dashboard [Pt 4] | .NET Aspire for Beginners](https://youtu.be/kgd3xK8Nz38?si=yAKLcu7pBrMdHOCi)
 first-working-dotnet-aspire-solution .NET Aspire Starter app created after following instructions from videos 1 and 2 from .NET Aspire for Beginners
     
     Video 1: [What is .NET Aspire? [Pt 1] | .NET Aspire for Beginners](https://youtu.be/VHzYEtd1MDM?si=uoMh7bFlQ-JUnswS)
