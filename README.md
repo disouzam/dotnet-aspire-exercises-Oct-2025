@@ -192,3 +192,10 @@ Add package that enable Aspire integration to Redis:
 cd AppHost
 dotnet add package Aspire.Hosting.Redis
 ```
+
+Added package for Api get access to Redis APIs:
+
+```bash
+cd Api
+dotnet add package Aspire.StackExchange.Redis.OutputCaching
+```
