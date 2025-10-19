@@ -92,12 +92,6 @@ namespace Microsoft.Extensions.DependencyInjection
 
             services.AddMemoryCache();
 
-            // Add default output caching
-            services.AddOutputCache(options =>
-            {
-                options.AddBasePolicy(builder => builder.Cache());
-            });
-
             return services;
         }
 
