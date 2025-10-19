@@ -110,3 +110,9 @@ cd AppHost
 dotnet add reference ../Api/Api.csproj
 dotnet add reference ../MyWeatherHub/ #Only path added, command auto-discovers the project inside
 ```
+
+
+# Service Discovery - Part 5
+
+Link to the video: [Simplifying communications with Service Discovery [Pt 5] | .NET Aspire for Beginners](https://youtu.be/l0ebdWo_Llw?si=82U9uTZT_iGMyQny)
+
