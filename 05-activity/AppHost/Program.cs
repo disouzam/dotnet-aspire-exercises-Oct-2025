@@ -1,6 +1,6 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
-var cache = builder.AddRedis("cache");
+var myCache = builder.AddRedis("cache");
 
 var myApi = builder.AddProject<Projects.Api>("api");
 
