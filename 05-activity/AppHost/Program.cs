@@ -1,7 +1,9 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var myCache = builder.AddRedis("cache")
-    .WithRedisCommander(containerName: "my-cache-commander");
+    .WithImageRegistry("ghcr.io")
+    .WithImage("microsoft/garnet")
+    .WithImageTag("latest");
 
 var myApi = builder.AddProject<Projects.Api>("api")
     .WithReference(myCache);
