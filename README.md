@@ -174,3 +174,28 @@ The commit mentioned above has been reverted (so that its effects are now null) 
 
 **Figure 6:** A successful service discovery operation
 ![A successful service discovery operation](./04-activity/5-structured-logs-showing-a-successful-service-discovery-operation.png)
+
+# .NET Aspire Integrations - Part 6
+
+Link to the video: [.NET Aspire Integrations [Pt 6] | .NET Aspire for Beginners](https://youtu.be/-GhHrrAM3fk?si=bWx1f5TBH8jGhqDb)
+
+```bash
+mkdir 05-activity
+cd 04-activity
+cp -r -v . ../05-activity
+cd ../05-activity
+mv Service-Discovery.sln Aspire-Integrations.sln
+```
+
+Add package that enable Aspire integration to Redis:
+```bash
+cd AppHost
+dotnet add package Aspire.Hosting.Redis
+```
+
+Added package for Api get access to Redis APIs:
+
+```bash
+cd Api
+dotnet add package Aspire.StackExchange.Redis.OutputCaching
+```
